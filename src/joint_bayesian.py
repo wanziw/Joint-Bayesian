@@ -115,7 +115,9 @@ def Verify(A, G, x1, x2):
     return float(ratio)
 
 
-def PCA_Train(data, result_fold, n_components=2000):
+#decide the dimension of A and G
+#def PCA_Train(data, result_fold, n_components=2000):
+def PCA_Train(data, result_fold, n_components=160):
     print_info("PCA training (n_components=%d)..."%n_components)
 
     pca = PCA(n_components=n_components)
